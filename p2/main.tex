@@ -1,0 +1,142 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{mathtools}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{microtype}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{multirow}
+\usepackage{cancel}
+
+% Establecer márgenes
+\geometry{a4paper, margin=1in, top=1.2in, headheight=15pt}
+
+% Configurar hipervínculos
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+    pdftitle={Práctica 2},
+    pdfauthor={Renato Josué Bedriñana Cárdenas, Antonio Nobrega},
+    pdfsubject={Práctica 2 - Anizador de espectro},
+}
+
+% Configuración de encabezado y pie de página
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize Práctica 2}
+\fancyhead[R]{\footnotesize Anizador de espectro}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Comando pa resaltar preguntas
+\newcommand{\question}[1]{\textcolor{blue!60!black}{\textbf{#1}}}
+
+% Configuración para código fuente
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.95}
+
+\lstset{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\small,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+
+% Formato de títulos
+\titleformat{\section}
+  {\normalfont\large\bfseries\color{blue!70!black}}
+  {\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\color{blue!60!black}}
+  {\thesubsection}{1em}{}
+
+% Espacio después de secciones
+\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+% Definición de comandos para matemáticas
+\newcommand{\dB}{\text{dB}}
+\newcommand{\dBFS}{\text{dBFS}}
+
+% Información del documento
+\title{\vspace{-1.5cm}\Large\textbf{Utilización do analizador de espectro}}
+\author{\normalsize Renato Josué Bedriñana Cárdenas \and \normalsize Antonio Nobrega}
+\date{\normalsize\today}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\begin{document}
+
+\maketitle
+\vspace{0.5cm}
+\section{Pregunta 1}
+\input{task1}
+
+\vspace{0.5cm}
+\section{Pregunta 2}
+\input{task2}
+
+\vspace{0.5cm}
+\section{Pregunta 3}
+\input{task3}
+%% Does this expression look familiar?
+\vspace{0.5cm}
+\section{Pregunta 4}
+\input{task4}
+
+\vspace{0.5cm}
+\section{Pregunta 5}
+\input{task5}
+
+\vspace{0.5cm}
+\section{Pregunta 6}
+\input{task6}
+
+\vspace{0.5cm}
+\section{Pregunta 7}
+\input{task7}
+
+\vspace{0.5cm}
+\section{Pregunta 8}
+\input{task8}
+
+\vspace{0.5cm}
+\section{Pregunta 9}
+\input{task9}
+
+\vspace{0.5cm}
+\section{Pregunta 10}
+\input{task10}
+
+\newpage
+%\input{appendix}
+\end{document}
