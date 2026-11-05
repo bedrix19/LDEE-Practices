@@ -10,8 +10,7 @@ a norma para os dispositivos de clase 2 medida polo método de tensión?
 a frecuencia de conmutación do convertedor?
 
 
-![[Pasted image imgs/20260910124921.png]]
-
+![Frecuencia emisiones](./imgs/FFT_emis.png)
 
 - Realizar unha transformada rápida de Fourier (FFT) da corrente sobre un intervalo de
 500 μs considerando un número de mostras igual a 131 072, co obxectivo de conseguir un
@@ -25,11 +24,11 @@ Poner la siguiente línea en la expresión de la FFT de salida del circuito simu
 
 $I(V1)*50*1e6*sqrt(2)$
 
-![[Pasted image imgs/20260910125149.png]]
+![Frecuencia emisiones](./imgs/expression_editor.png)
 
 
-![[Pasted image imgs/20260910125034.png]]
 
+![Frecuencia emisiones](./imgs/TablaNormativa.png)
 
 - La frecuencia del primer pico es de 600kHz
 
@@ -43,18 +42,16 @@ $I(V1)*50*1e6*sqrt(2)$
 
 
 
+![Frecuencia emisiones](./imgs/noFilter_mag.png)
 
-![[Pasted image imgs/20260924104236.png]]
 
 
 - Según se ve aquí, la magnitud en el primer (y mayor) pico, es de 153dB, el máximo son 78dB, dando 76dB de atenuación, 50/10^(A/20)=0.0079 Ohms. Cogeremos la resistencia más pequeña para poder cumplir
 
 
+![Frecuencia emisiones](./imgs/FilterCircuit.png)
 
 
 
-![[Pasted image imgs/20260924112728.png]]
+![Frecuencia emisiones](./imgs/FilteredFFT.png)
 
-
-
-![[Pasted image imgs/20260924112801.png]]
