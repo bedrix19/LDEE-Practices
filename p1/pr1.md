@@ -4,7 +4,7 @@
 1.  Cales son as bandas de frecuencia e os límites de emisión conducida que establece
 a norma para os dispositivos de clase 2 medida polo método de tensión?
 
-![Frecuencia emisiones](imgs/20260924101531.png)
+![Frecuencia emisiones](./imgs/20260924101531.png)
 
 2. Cal é a tensión media na carga? Cal é a potencia media entregada á carga? Cal é
 a frecuencia de conmutación do convertedor?
