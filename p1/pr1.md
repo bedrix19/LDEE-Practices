@@ -53,6 +53,9 @@ $I(V1)*50*1e6*sqrt(2)$
 
 4. **Calcular a máxima impedancia admisible no filtro de entrada para cada unha das frecuencias anteriores. Para valores de A superiores a 20 dB, esta impedancia pode calcularse aproximadamente por medio da ecuación Z = 50 Ω/10(A/20) .**
 
+**REVISAR**
+
+clase:
 | Banda | fpico | Adb | Zmax |
 |-------|-------|-----|------|
 | MW | 600kHz | 79dB | 5.61mΩ |
@@ -62,6 +65,17 @@ $I(V1)*50*1e6*sqrt(2)$
 | CB | 27MHz | 60dB | 50mΩ |
 | VHF | 30MHz | 57dB | 70.6mΩ |
 | VHF | 68MHz | 51dB | 141mΩ |
+
+tabla de 6.3 de la EN5505:
+| Banda | fpico | Adb | Zmax |
+|-------|-------|-----|------|
+| MW | 600kHz | 55dB | 88.9mΩ |
+| SW | 6MHz | 42dB | 397mΩ |
+| FM | 76MHz | 34dB | 998mΩ |
+| Tv Band I | 42MHz | 47dB | 223mΩ |
+| CB | 27MHz | 42dB | 397mΩ |
+| VHF | 30MHz | 39dB | 561mΩ |
+| VHF | 68MHz | 33dB | 1.12Ω |
 
 - Cogemos el Zmax más pequeño puesto que nos cubre ya con la atenuación buscada.
 
@@ -79,6 +93,40 @@ $I(V1)*50*1e6*sqrt(2)$
 | VHF | 68MHz | 51dB | 141mΩ | 16.6nF |
 
 - Cogemos el más pequeño: 47.3µF. Cogemos el valor comercial más cercano: 68µF.
+
+6. **Con este condensador, cúmprese coa norma de emisións conducidas? A que frecuencia se obtén o pico máximo de emisión e que marxe existe respecto ao límite imposto pola norma a esa frecuencia?**
+
+- xd
+
+7. **Calcular a indutancia serie equivalente (ESL) máxima admisible no condensador de entrada que garanta que a impedancia do filtro non supera os máximos calculados anteriormente. Esta ESL pode calcularse aproximadamente, desprezando a impedancia do condensador de entrada, como ESL = Z/(2πf ).**
+
+| Banda | fpico | Zmax | ESLmax |
+|-------|-------|------|--------|
+| MW | 600kHz | 5.61mΩ | 1.49nH |
+| SW | 6MHz | 50mΩ | 1.33nH |
+| FM | 76MHz | 126mΩ | 0.263nH |
+| Tv Band I | 42MHz | 4.46Ω | 16.9nH |
+| CB | 27MHz | 50mΩ | 0.295nH |
+| VHF | 30MHz | 70.6mΩ | 0.375nH |
+| VHF | 68MHz | 141mΩ | 0.330nH |
+
+- Cogemos la ESL menor: **≈ 0.26 nH** (FM, 76 MHz).
+
+8. **Cúmprese coa norma? Que efecto ten a ESL nas emisións conducidas?**
+
+- (pendiente: requiere la gráfica de emisiones)
+
+9. **Calcular a resistencia serie equivalente (ESR) máxima admisible no condensador que garanta que non se supera a impedancia máxima no filtro de entrada en tódalas frecuencias. A impedancia do condensador de filtro considerando a ESR e a ESL pode calcularse como Z_C = √(R² + (2πfL − 1/(2πfC))²).**
+
+| Banda | fpico | Zmax | ESLmax | ESRmax |
+|-------|-------|------|--------|--------|
+| MW | 600kHz | 5.61mΩ | 1.49nH | 4.80mΩ |
+| SW | 6MHz | 50mΩ | 1.33nH | 49.1mΩ |
+| FM | 76MHz | 126mΩ | 0.263nH | 3.04mΩ |
+| Tv Band I | 42MHz | 4.46Ω | 16.9nH |
+| CB | 27MHz | 50mΩ | 0.295nH |
+| VHF | 30MHz | 70.6mΩ | 0.375nH |
+| VHF | 68MHz | 141mΩ | 0.330nH |
 ---
 
 
