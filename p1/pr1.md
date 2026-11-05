@@ -53,9 +53,30 @@ $I(V1)*50*1e6*sqrt(2)$
 
 4. **Calcular a máxima impedancia admisible no filtro de entrada para cada unha das frecuencias anteriores. Para valores de A superiores a 20 dB, esta impedancia pode calcularse aproximadamente por medio da ecuación Z = 50 Ω/10(A/20) .**
 
+| Banda | fpico | Adb | Zmax |
+|-------|-------|-----|------|
+| MW | 600kHz | 79dB | 5.61mΩ |
+| SW | 6MHz | 60dB | 50mΩ |
+| FM | 76MHz | 52dB | 126mΩ |
+| Tv Band I | 21MHz | 79dB | 5.61mΩ |
+| CB | 27MHz | 60dB | 50mΩ |
+| VHF | 30MHz | 57dB | 70.6mΩ |
+| VHF | 68MHz | 51dB | 141mΩ |
+
+- Cogemos el Zmax más pequeño puesto que nos cubre ya con la atenuación buscada.
 
 
+5. **Calcular a capacidade mínima do condensador de entrada (ZC = 1/(2πf C)) que asegura os requisitos de impedancia máxima do filtro de entrada en tódalas frecuencias. Escoller un valor de capacidade entre os seguintes valores comerciais: 10 µF, 22 µF, 68 µF e 100 µF.**
 
+| Banda | fpico | Adb | Zmax | Cmin |
+|-------|-------|-----|------|------|
+| MW | 600kHz | 79dB | 5.61mΩ | 47.3µF |
+| SW | 6MHz | 60dB | 50mΩ | 531nF |
+| FM | 76MHz | 52dB | 126mΩ | 16.7nF |
+| Tv Band I | 21MHz | 79dB | 5.61mΩ | 1.35µF |
+| CB | 27MHz | 60dB | 50mΩ | 118nF |
+| VHF | 30MHz | 57dB | 70.6mΩ | 75.1nF |
+| VHF | 68MHz | 51dB | 141mΩ | 16.6nF |
 
 ---
 

@@ -10,3 +10,5 @@ Teoria
 *.synctex(busy)
 *.asv
 build
+
+dummy.md
