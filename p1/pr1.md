@@ -58,7 +58,7 @@ $I(V1)*50*1e6*sqrt(2)$
 | MW | 600kHz | 79dB | 5.61mΩ |
 | SW | 6MHz | 60dB | 50mΩ |
 | FM | 76MHz | 52dB | 126mΩ |
-| Tv Band I | 21MHz | 79dB | 5.61mΩ |
+| Tv Band I | 42MHz | 21dB | 28.1mΩ |
 | CB | 27MHz | 60dB | 50mΩ |
 | VHF | 30MHz | 57dB | 70.6mΩ |
 | VHF | 68MHz | 51dB | 141mΩ |
@@ -73,11 +73,12 @@ $I(V1)*50*1e6*sqrt(2)$
 | MW | 600kHz | 79dB | 5.61mΩ | 47.3µF |
 | SW | 6MHz | 60dB | 50mΩ | 531nF |
 | FM | 76MHz | 52dB | 126mΩ | 16.7nF |
-| Tv Band I | 21MHz | 79dB | 5.61mΩ | 1.35µF |
+| Tv Band I | 42MHz | 21dB | 28.1mΩ | 134nF |
 | CB | 27MHz | 60dB | 50mΩ | 118nF |
 | VHF | 30MHz | 57dB | 70.6mΩ | 75.1nF |
 | VHF | 68MHz | 51dB | 141mΩ | 16.6nF |
 
+- Cogemos el más pequeño: 47.3µF. Cogemos el valor comercial más cercano: 68µF.
 ---
 
 
